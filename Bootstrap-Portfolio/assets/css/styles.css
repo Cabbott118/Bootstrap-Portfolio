@@ -1,6 +1,10 @@
-/* h2 {
-    font-family: 'Georgia', Times, Times New Roman, serif;
-} */
+/* Relative Across All Pages */
+
+body {
+    background-color: #ddd;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 18px;
+}
 
 header {
     width: 100%;
@@ -16,26 +20,16 @@ header {
     flex-wrap: nowrap;
 }
 
-/* h2 { 
-    text-align: center;
-    color: white;
-    padding-top: 15px;
-    width: 25%;
-    height: 65px;
-    background-color: #4aaaa5;
-} */
-
-body {
-    background-color: #ddd;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    font-size: 18px;
+.listItems {
+    /* Class used for lining of NAVBAR links */
+    float: right;
+    margin-left: 50%;
 }
 
 .mainContent {
     margin: 45px auto 90px auto;
     width: 100%;
     max-width: 960px;
-    /* height: 400px; */
     background-color: #f8f9fa;
     border: 3px solid #ccc;
 }
@@ -57,15 +51,6 @@ h1 {
     border-bottom: 3px solid #ccc;
 }
 
-footer {
-    padding-top: 10px;
-    height: 50px;
-    color: #fff;
-    text-align: center;
-    background: #666;
-    border-top: 3px solid #4aaaa5;
-}
-
 #myName {
     font-family: Georgia, Times, "Times New Roman", serif;
     font-size: 30px;
@@ -81,10 +66,22 @@ footer {
     border-bottom: 3px solid #ccc;
 }
 
-.listItems {
-    float: right;
-    margin-left: 50%;
+p {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #777;
+    line-height: 30px;
 }
+
+footer {
+    padding-top: 10px;
+    height: 50px;
+    color: #fff;
+    text-align: center;
+    background: #666;
+    border-top: 3px solid #4aaaa5;
+}
+
+/* Index Specific */
 
 .planePic {
     float: left;
@@ -93,8 +90,50 @@ footer {
     height: 150px;
 }
 
-p {
+/* Portfolio Specific */
+
+.portfolioPics {
+    width: 250px;
+    height: 180px;
+    margin: 20px 0px 20px 0px;
+}
+
+.gallery {
+    position: relative;
+    float: left;
+    width: 300px;
+    margin: 20px 0 25px;
+}
+  
+.gallery h3 {
+    position: absolute;
+    bottom: 35px;
+    width: 250px;
+    padding: 15px;
+    margin-bottom: 0;
+    font-weight: 300;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    background: #4aaaa5;
+}
+
+/* Contact Page Specific */
+
+label {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     color: #777;
-    line-height: 30px;
 }
+
+.messageBox{
+    resize: none;
+}
+
+.btn-success {
+    background-color: #4aaaa5;
+}
+
+:hover.btn-success {
+    background-color: #4aaaa5;
+}
+
